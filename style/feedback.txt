@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+td {
+    border-bottom: 1px solid #dbd7d2;
+}
+tr:hover {
+background-color: #967655;
+}
+input[type=submit],[type=reset] {
+    padding:5px 15px; 
+    background:#aba296; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    margin: 30px 15px
+}
+input[type=reset]:hover {
+    background: #e4c8ac; 
+}
+input[type=submit]:hover {
+    background: #e4c8ac; 
+}

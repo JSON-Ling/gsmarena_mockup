@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!-- Drafting -->
+
+<html lang="en">
+
+<head>
+
+ <title>LTERealm | Home of the phones</title>
+ <link rel="stylesheet" type="text/css" href="style/style.css">
+ <meta charset="utf-8">
+ <meta name="author" content="Brendan Pek Chong Kian, Ling Chern Yung, Hii Lu Teck, Kim Hansol">
+ <meta name="description" content="LTERealm">
+ <meta name="keywords" content="phones, reviews, lterealm, news">
+
+</head>
+
+<body>
+
+<!-- == Header section commented out for now ==
+<header>
+ <div class="logo">
+  <a href="index.html">
+   <img class="img" src="images/gsm.png" title="LTERealm" alt="placeholder image">
+  </a>
+ </div>
+</header>
+-->
+
+<nav>
+<div class="topnav">
+<a href="index.html"><img class="logoimg" src="images/gsm.png"></a>
+  <ul>
+	<li><a href="phones.html">Phones</a></li>
+	<li><a href="reviews.html">Reviews</a></li>
+	<li><a href="news.html">News</a></li>
+	<li class="aboutus"><a href="aboutus.html" class="active">About Us</a></li>
+  </ul>
+</div>
+</nav>
+
+<article>
+
+<div class="parallax">
+ <div class="caption">
+  <span class="border">WELCOME TO GSM ARENA</span>
+ </div>
+</div>
+
+<div class="sec1">
+ <p class="welcome-text">You like phones?</p>
+ <p class="desc-text">News, reviews and specs - we got you covered.</p>
+</div>
+
+<div class="parallax2"></div>
+
+</article>
+
+<footer>
+<div class="footer">© Just Do It | Page developed by <em>Ling Chern Yung</em> | Last updated: 29 May 2018<div>
+</footer>
+
+</body>
+
+
+</html>

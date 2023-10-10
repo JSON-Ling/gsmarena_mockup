@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Apple Iphone X Overview | GSMArena</title>
+<link rel="stylesheet" type="text/css" href="style/style.css">	
+</head>
+
+<body>
+
+<header>
+ <div class="logo">
+  <a href="index.html">
+   <img class="img" src="images/gsm.png" title="GSMArena" alt="site logo">
+  </a>
+ </div>
+</header>
+
+<nav>
+<div class="topnav">
+  <ul>
+	<li><a href="phones.html">Phones</a></li>
+	<li><a href="reviews.html">Reviews</a></li>
+	<li><a href="news.html">News</a></li>
+	<li class="aboutus"><a href="aboutus.html" class="active">About Us</a></li>
+  </ul>
+</div>
+</nav>
+
+<nav>
+<div class="pagenav">
+  <ul>
+	<li class="productname"><a href="javascript:void(0)" class="prodname_active">Apple Iphone X</a></li>
+	<li class="specs"><a href="iphonexspecs.html">Specifications</a></li>
+	<li class="overview"><a href="iphonexproduct.html" class="pagenav_active">Overview</a></li>
+  </ul>
+</div>
+</nav>
+
+<section class="iphonexprod_sect1">
+</section>
+	
+<section class="iphonexprod_sect2">
+	<h1>It's all screen.</h1>
+	<p>With iPhone X, the device is the display.</p>
+</section>
+	
+<section class="iphonexprod_sect3">
+</section>
+	
+<section class="iphonexprod_sect4">
+	<h1>TrueDepth Camera</h1>
+	<p>A tiny space that houses some of the most sophisticated technology we've ever developed.</p>
+</section>
+	
+<section class="iphonexprod_sect5">
+</section>
+	
+<section class="iphonexprod_sect6">
+	<h2>Gallery</h2>
+</section>
+	
+<!-- Slideshow Starts Here -->
+
+<section class="slideshowb">
+
+<div class="slideshow-container">
+
+<!-- Slides for Slideshow BEGIN -->
+
+<div class="slideshow fade">
+  <img src="images/iphonex_1.jpg" style="width: 100%" alt="">
+</div>
+
+<div class="slideshow fade">
+  <img src="images/iphonex_2.jpg" style="width: 100%;" alt="what">
+</div>
+
+<div class="slideshow fade">
+  <img src="images/iphonex_3.jpg" style="width: 100%" alt="">
+</div>
+
+<!-- Slides for Slideshow END -->
+
+<!-- Previous & Next Slide Buttons BEGIN -->
+ 
+<a class="prev" onclick="nextslide(-1)">&#10094;</a>
+<a class="next" onclick="nextslide(1)">&#10095;</a>
+
+<!-- Previous & Next Slide Buttons END -->
+
+</div>
+<br>
+
+<!-- Slides Indicator BEGIN -->
+<!-- add accordingly with every slide by increasing the number -->
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentslide(1)"></span>
+  <span class="dot" onclick="currentslide(2)"></span> 
+  <span class="dot" onclick="currentslide(3)"></span> 
+</div>
+
+<!-- Slides Indicator END -->
+
+<!-- JavaScript Scripts BEGIN -->
+<!-- add to every end of slideshow section -->
+
+<script>
+var slideindex = 1;
+showslide(slideindex);
+
+function nextslide(n) {
+  showslide(slideindex += n);
+}
+
+function currentslide(n) {
+  showslide(slideindex = n);
+}
+
+function showslide(n) {
+  var i;
+  var slides = document.getElementsByClassName("slideshow");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideindex = 1}    
+  if (n < 1) {slideindex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideindex-1].style.display = "block";  
+  dots[slideindex-1].className += " active";
+}
+</script>
+
+<!-- JavaScript Scripts END -->
+
+</section>
+
+<section class="section4">
+	
+<div class="s4_toptext">
+<p>You might be interested in</p>
+</div>
+	
+<div class="card1">
+	<a href="phones.html">
+		<img src="images/iphone.jpg" alt="image of an iphone">
+		<p>Phones</p>
+	</a>
+</div>
+
+<div class="card2">
+	<a href="reviews.html">
+		<img src="images/review.jpg" alt="image of someone typing email">
+		<p>Reviews</p>
+	</a>
+</div>
+	
+<div class="card3">
+	<a href="news.html">
+		<img src="images/news.jpg" alt="image of a newspaper">
+		<p>News</p>
+	</a>
+</div>
+	
+</section>	
+
+<footer>
+<div class="footer">© Just Do It | Page developed by <em>Brendan Pek</em> | Last updated: 19 June 2018
+</div>
+</footer>	
+
+</body>
+</html>

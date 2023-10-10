@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<title>Samsung Galaxy S9 Review | GSMArena</title>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">
+  <a href="index.html">
+   <img class="img" src="images/gsm.png" title="GSMArena" alt="placeholder image">
+  </a>
+ </div>
+</header>
+
+<nav>
+<div class="topnav">
+  <ul>
+	<li><a href="phones.html">Phones</a></li>
+	<li><a href="reviews.html">Reviews</a></li>
+	<li><a href="news.html">News</a></li>
+	<li class="aboutus"><a href="aboutus.html" class="active">About Us</a></li>
+	<li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</div>
+</nav>
+
+<nav>
+<div class="breadcrumb">
+  <ul>
+	<li><a href="reviews.html">Reviews</a></li>
+	<li>Samsung Galaxy S9 Review | Iterative, but impressive</li>
+  </ul>
+</div>
+</nav>	
+	
+<article>
+	
+<section class="s9rev_sect1">
+</section>
+	
+<section class="rev_sect2">
+	<h1>Samsung Galaxy S9 Review | Iterative, but impressive</h1>
+	<h2>Written by ...</h2>
+	<p>Published 17 Jun 2018, 10:05AM</p>
+</section>
+	
+<div class="vidstyle"><iframe src="https://www.youtube.com/embed/Gzy_nCkn88U?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="1000" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<section class="rev_sect3">
+<p>The Samsung Galaxy S9 is the phone that's supposed to lead the charge where the Galaxy S8, one of the best phones we've ever tested, left off - but it's not as much of an upgrade.</p>
+<p>Well, that's at first glance, because there is a raft of updates that some would find appealing. Yes, the design is identical to the Galaxy S8, and in reality this really should have been the 'S' variant of that model if Samsung ever wanted to ape Apple's naming strategy.</p>
+<p>But there's also a new, high-power camera on the back that brings genuine innovation in the dual-aperture shutter, as well as a more robust frame and so, so much more power under the hood.</p>
+<p>The screen is brighter and the dual speakers make this more of a media marvel - and the Galaxy S9 fixes one major flaw with the S8 by making it easy to unlock the phone with your face or finger, which 2017's model failed at - and that's why we've named it as one of our best smartphones around at the moment.</p>
+
+<p>If this sounds like we're talking up an uninspiring phone, that's partly true - but we wanted to make sure you knew the big changes on the S9 if you were confused on why it looks so similar to last year's model.</p>
+</section>
+
+
+<!-- Slideshow Starts Here -->
+
+<section class="slideshowb">
+
+<div class="slideshow-container">
+
+<!-- Slides for Slideshow BEGIN -->
+
+<div class="slideshow fade">
+  <img src="images/s9_1.jpg" style="width: 100%" alt="">
+</div>
+
+<div class="slideshow fade">
+  <img src="images/s9_2.jpg" style="width: 100%;" alt="what">
+</div>
+
+<div class="slideshow fade">
+  <img src="images/s8_1.jpg" style="width: 100%" alt="">
+</div>
+
+<!-- Slides for Slideshow END -->
+
+<!-- Previous & Next Slide Buttons BEGIN -->
+ 
+<a class="prev" onclick="nextslide(-1)">&#10094;</a>
+<a class="next" onclick="nextslide(1)">&#10095;</a>
+
+<!-- Previous & Next Slide Buttons END -->
+
+</div>
+<br>
+
+<!-- Slides Indicator BEGIN -->
+<!-- add accordingly with every slide by increasing the number -->
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentslide(1)"></span>
+  <span class="dot" onclick="currentslide(2)"></span> 
+  <span class="dot" onclick="currentslide(3)"></span> 
+</div>
+
+<!-- Slides Indicator END -->
+
+<!-- JavaScript Scripts BEGIN -->
+<!-- add to every end of slideshow section -->
+
+<script>
+var slideindex = 1;
+showslide(slideindex);
+
+function nextslide(n) {
+  showslide(slideindex += n);
+}
+
+function currentslide(n) {
+  showslide(slideindex = n);
+}
+
+function showslide(n) {
+  var i;
+  var slides = document.getElementsByClassName("slideshow");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideindex = 1}    
+  if (n < 1) {slideindex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideindex-1].style.display = "block";  
+  dots[slideindex-1].className += " active";
+}
+</script>
+
+<!-- JavaScript Scripts END -->
+
+</section>
+	
+<section class="section4">
+	
+<div class="s4_toptext">
+<p>You might be interested in</p>
+</div>
+	
+<div class="card1">
+	<a href="phones.html">
+		<img src="images/iphone.jpg" alt="image of an iphone">
+		<p>Phones</p>
+	</a>
+</div>
+
+<div class="card2">
+	<a href="reviews.html">
+		<img src="images/review.jpg" alt="image of someone typing email">
+		<p>Reviews</p>
+	</a>
+</div>
+	
+<div class="card3">
+	<a href="news.html">
+		<img src="images/news.jpg" alt="image of a newspaper">
+		<p>News</p>
+	</a>
+</div>
+	
+</section>
+	
+</article>
+
+<footer>
+<div class="footer">© Just Do It | Page developed by <em>Ling Chern Yung</em> | Last updated: 29 May 2018
+</div>
+</footer>	
+	
+</body>
+</html>
